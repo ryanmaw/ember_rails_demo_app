@@ -1,0 +1,44 @@
+Build Notes
+
+1. Generate a new rails app
+	rails new Ember_Rails_Blog_App --skip-test-unit
+
+2. Modify The Gemfile
+	Make Groups
+
+3. Update Ruby Version
+	Update RVM 
+		rvm get stable
+		rvm list; # view rubies on system
+		rvm ruby-2.1.5
+	Add Ruby Version to Gemfile # Heroku pulls the ruby -v from your Gemfile
+
+4. Create New Gemset
+	rvm gemset create Ember_Rails_Blog_App
+	rvm gemset use Ember_Rails_Blog_App
+
+	rvm gemset name; # to view your current gemset
+	rvm gemset list; # to view a list of gemsets
+
+5. Create .ruby-gemset
+	Name of rvm gemset goes inside
+
+6. Create .ruby-version
+	Ruby Version goes inside
+	EX. ruby-2.1.2
+
+6. Bundle Update/Install --without production
+	# Install without the production of the production group gems
+	# This only needs to be run once. It is remembered by bundle
+	
+7. Change DB to Postgres
+	Modify config/database.yml for use with postgresql
+
+8. Install Rspec
+	rails generate rspec:install
+
+9. Git Commit "Initial Commit"
+
+
+
+
