@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 ruby '2.1.5'
 
 gem 'rails', '4.1.2'
-gem 'jquery-rails'
-gem 'turbolinks'
+gem 'jquery-rails', '3.1.2'
+gem 'turbolinks', '2.5.2'
 gem 'jbuilder', '~> 2.0'
-gem 'pg'
+gem 'pg', '0.17.1'
 
 group :development, :test do
 	gem 'rspec-rails'
@@ -14,10 +14,10 @@ group :development, :test do
 end
 
 group :test do
-	gem 'capybara'
-	gem 'selenium-webdriver'
-	gem 'factory_girl_rails'
-	gem 'capybara-webkit'
+	gem 'capybara', '2.4.4'
+	gem 'selenium-webdriver', '2.44.0'
+	gem 'factory_girl_rails', '4.5.0'
+	gem 'capybara-webkit', '1.3.1'
 end
 
 group :assets do
@@ -28,7 +28,7 @@ group :assets do
 end
 
 group :production do
-	gem 'rails_12factor'
+	gem 'rails_12factor', '0.0.3'
 end
 
 group :doc do

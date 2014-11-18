@@ -38,7 +38,33 @@ Build Notes
 	rails generate rspec:install
 
 9. Git Commit "Initial Commit"
+	touch README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git remote add origin https://github.com/ryanmaw/ember_rails_blog_app.git
+	git push -u origin master
 
+	or
+
+	Existing Repo
+
+	git remote add origin https://github.com/ryanmaw/ember_rails_blog_app.git
+	git push -u origin master
+
+10. Update the readme
+	git mv README.rdoc README.md
+	git commit -a -m "README to Markdown '.md' "
+
+12. Update the gem editions using the gemfile
+
+11. Deploy to Heroku
+	heroku create
+
+	*Deprecated* rake assests:precompile # done automatically by heroku now
+	
+	git commit -a -m "Precompiled Assests For Heroku Push"
+	git push heroku
 
 
 
