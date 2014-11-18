@@ -14,3 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+
+installing_ember.txt
+quick_start_guide.txt

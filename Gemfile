@@ -6,6 +6,7 @@ gem 'jquery-rails', '3.1.2'
 gem 'turbolinks', '2.5.2'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '0.17.1'
+gem 'ember-rails', '0.15.0'
 
 group :development, :test do
 	gem 'rspec-rails'
