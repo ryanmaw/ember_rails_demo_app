@@ -1,0 +1,41 @@
+1. Create a new branch and check it out
+	git checkout -b installing ember
+
+	or 
+
+	Longways
+
+	git branch installing_ember
+	git checkout installing_ember
+
+	* push it to github using git push -u origin Ember_Installation
+
+2. Add Ember Gems
+	gem 'ember-rails'
+	* Deprecated * gem 'ember-source', '1.8.0' # This gets determined automatically now as a dependency
+
+	Update the gemfile with the version
+
+3. Run Embers Bootstrap
+	rails generate ember:bootstrap
+
+	These rename the app to the convention App and select the js engine
+
+	rails g ember:bootstrap -n App --javascript-engine js
+
+	rails g ember:bootstrap -n App --javascript-engine coffee
+
+4. Update config/envoirnments to use correct Ember.variant
+
+	# config/environments/test.rb
+	config.ember.variant = :development
+
+	# config/environments/development.rb
+	config.ember.variant = :development
+
+	# config/environments/production.rb
+	config.ember.variant = :production
+
+5. Create And Migrate The Database
+	rake db:create
+	rake db:migrate
