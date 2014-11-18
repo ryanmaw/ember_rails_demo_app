@@ -1,4 +1,6 @@
-App.Store = DS.Store.extend({
+// App.Store is deprecated; Change it to App.ApplicationStore to silence the warning
+
+App.ApplicationStore = DS.Store.extend({
 
 });
 

@@ -1,2 +1,16 @@
 1. Create a controller with a view called index
 	rails g controller Home index
+
+2. Create a template for Ember to render
+	Ember looks for an application template by default that we need to create
+
+	//app/assets/javascrips/templates/application.js.emblem
+
+	Restart the server and then checkout local host.
+
+* Note if you get an error within the ember debugger that says handlbars error h1 not found blah blah blah...
+	Install Emblem.js Sytax Highlighting to sublime text.
+
+	https://github.com/johanobergman/sublime-emblem-syntax
+
+	That's what solved it for me
