@@ -7,7 +7,7 @@ gem 'turbolinks', '2.5.2'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '0.17.1'
 gem 'ember-rails', '0.15.0'
-gem 'emblem-rails'
+gem 'emblem-rails', '0.2.1'
 
 group :development, :test do
 	gem 'rspec-rails'
