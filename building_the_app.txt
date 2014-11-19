@@ -65,6 +65,11 @@ Building The APP
 
 	Fill in the actions
 
+10. Populate The Members Controller
+
+	Gem 'ffaker'
+	create lib/tasks/populate.rake
+
 
 
 

@@ -6,7 +6,7 @@ class Api::V1::MembersController < ApplicationController
 	end
 
 	def show
-		respond_with Member
+		respond_with member
 	end
 
 	def create 
@@ -14,7 +14,9 @@ class Api::V1::MembersController < ApplicationController
 	end
 
 	def update
-		respond_with member.update(member_params)
+		# return 422 for invalid updates and 204 otherwise
+		member.update(member_params)
+		respond_with member
 	end
 
 	def destroy
@@ -24,28 +26,11 @@ class Api::V1::MembersController < ApplicationController
 	private 
 
 	def member 
-		Member.find(params[:id])
+		# lets only hit the db once
+		@member ||= Member.find(params[:id])
 	end
 
 	def member_params
 		params.require(:member).permit(:first_name, :last_name, :email, :phone, :status, :notes)
 	end
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 end

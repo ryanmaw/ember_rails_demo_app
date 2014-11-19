@@ -3,11 +3,13 @@ ruby '2.1.5'
 
 gem 'rails', '4.1.2'
 gem 'jquery-rails', '3.1.2'
-gem 'turbolinks', '2.5.2'
+#gem 'turbolinks', '2.5.2'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '0.17.1'
 gem 'ember-rails', '0.15.0'
 gem 'emblem-rails', '0.2.1'
+gem 'ffaker', '1.25.0'
+gem 'puma'
 
 group :development, :test do
 	gem 'rspec-rails'

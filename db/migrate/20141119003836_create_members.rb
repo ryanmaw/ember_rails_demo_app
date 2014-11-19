@@ -7,6 +7,7 @@ class CreateMembers < ActiveRecord::Migration
       t.string :phone
       t.string :status
       t.text :notes
+      
       t.timestamps
     end
   end
