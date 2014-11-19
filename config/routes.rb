@@ -55,4 +55,11 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  
+  # Catch all route for rails to avoid 404 error on ember subroutes
+  get '*path', to: 'home#index'
 end
+
+
+
+

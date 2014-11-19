@@ -1,0 +1,15 @@
+Building The APP
+
+1. Preparing Routes
+
+	Enable AutoLocation to get rid of the # in urls. 
+
+	/router.js.coffee
+	App.Router.reopen
+		location: 'auto'
+		rootURL: '/'
+
+2. Create Catch All Rails Route
+
+	At the bottom of routes.rb add
+	get '*path', to: 'home#index'
