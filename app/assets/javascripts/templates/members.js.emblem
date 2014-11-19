@@ -1,0 +1,5 @@
+article#members
+	h1 Members
+	ul
+		each member in controller 
+			li= member.fullName

@@ -15,3 +15,18 @@
 	This result is then available to the controller, view, and template
 
 	TEST: Visit your root route and look at the “Data” tab in the Ember Inspector. You should see all of your 			  Members.
+
+3. Create the Template
+
+	Showing Full Names
+
+		We can create a property in the model to display full names
+
+4. Sorting Members
+
+	Members aren't in any particular order so far. 
+
+	You can sort arrays of models by specifying sortProperties in the controller.
+	Lets make a controller!
+
+	In the controllers we can sortProperties.  sortProperties takes an array of string with the highest priority first.git 
