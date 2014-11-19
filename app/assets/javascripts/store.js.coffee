@@ -1,6 +1,7 @@
 # http://emberjs.com/guides/models/#toc_store
 # http://emberjs.com/guides/models/pushing-records-into-the-store/
-
+DS.RESTAdapert.reopen
+	namespace: 'api/v1'
 App.ApplicationStore = DS.Store.extend({
 
 })

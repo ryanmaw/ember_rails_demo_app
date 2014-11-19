@@ -13,3 +13,47 @@ Building The APP
 
 	At the bottom of routes.rb add
 	get '*path', to: 'home#index'
+
+3. Creating a Rails API for Ember
+
+	The API allows communication between Ember and Rails backend
+
+	/store.js.coffee
+	App.ApplicationAdapter = DS.ActiveModelAdapter.extend()
+
+	This line allows Ember to communicate with the Rails backend through Active Model Serializes.
+	Active Model Serialize is actually a gem but it is a dependency of Ember-Rails.
+
+4. Version the API Namespace
+	
+	/store.js.coffee
+
+	Because we will be versioning our API we need to give the namespace a prepend with the version number
+
+	DS.RESTAdapter.reopen
+		namespace: 'api/v1'
+
+5. Modeling Leads
+
+	rails g migration create_leads first_name:string last_name:string email:string phone:string status:string notes:text
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
