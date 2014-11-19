@@ -1,0 +1,28 @@
+1. Ember Data 
+
+	Ember Data is the standard for handling data.
+
+	Ember needs a Model for Members just as Rails dose. 
+
+	Ember Data gives us the DS.Model object which we'll extend
+
+	Ember will automatically read in the json api's atts.  
+
+	Ember Data only has 4 types. string, number, boolean, date
+
+	ASIDE about DS.Model
+
+		DS.Model has a bunch of methods and properties.
+
+		model.save()
+		model.rollback()
+		model.destroyRecord()
+
+		The main difference between the DS.Model object and the Ember.Object is that you cannot create them the same way.
+
+		To create a new DS.Model instance you have to go through the store.
+
+		@store.createRecord('modelName', firstName: "John" , lastName: "Snow")
+
+		Store encapsulates you app's knowledge of all the active DS.Model instances.
+		Store has to do more behind the scenes work when you create a Model instance
