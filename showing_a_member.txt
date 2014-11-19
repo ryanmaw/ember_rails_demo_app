@@ -1,0 +1,5 @@
+1. Add a Resource Route
+
+2. Add a Route Object
+
+3. Create A Template

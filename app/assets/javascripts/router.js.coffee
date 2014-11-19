@@ -6,4 +6,5 @@ App.Router.reopen
 	location: 'auto'
 
 App.Router.map ->
-	@resource 'members', path: '/'
+	@resource 'members', path: '/', ->
+		@resource 'member', path: '/members/:id'
