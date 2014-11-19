@@ -8,4 +8,22 @@
 
 2. Tell Ember the rootElement
 
+3. Where to Build the Layout?
+
+	Rails vs Ember 
+
+	This will be project dependent.  
+
+	If you are using Ember for a singular page within a Rails app then maybe layout in rails.
+
+	Else you app is Ember heavy then layout in Ember
+
+	For this app we could just do it in rails but we'll use Ember because it's an Ember tutorial dummy. 
+
+4. Ember Layout
+	
+	Ember always renders the application template, so we'll use that for the layout:
+
+	
+
 	
