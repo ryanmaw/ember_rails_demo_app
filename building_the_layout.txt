@@ -1,0 +1,11 @@
+1. Where to render Ember
+
+	Ember will insert at the end of your body tag by default.
+
+	or 
+
+	We can chose where to render ember by setting a rootElement  
+
+2. Tell Ember the rootElement
+
+	
