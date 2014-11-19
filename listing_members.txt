@@ -1,0 +1,17 @@
+1. Add a Route
+
+	Everything always starts with routes!
+
+	Create a resource path set to root
+
+2. Create a Route Object
+
+	Next we need to fetch all the lead records.  Let's create a MembersRoute
+
+	App.MembersRoute = Ember.Route.extend
+		model: -> @store.find 'member'
+
+	model is a hook that's called whenever the route is entered
+	This result is then available to the controller, view, and template
+
+	TEST: Visit your root route and look at the “Data” tab in the Ember Inspector. You should see all of your 			  Members.
