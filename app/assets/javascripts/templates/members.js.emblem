@@ -2,4 +2,7 @@ article#members
 	h1 Members
 	ul
 		each member in controller 
-			li= member.fullName
+			link-to 'member' member tagName="li"
+				member.fullName
+
+outlet
