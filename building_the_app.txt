@@ -37,8 +37,15 @@ Building The APP
 
 	rails g migration create_leads first_name:string last_name:string email:string phone:string status:string notes:text
 
-	
+	migrate
 
+6. Create Member model by Hand
+
+7. Set up Serializer 
+	
+	To set up the Serializer we need to list out all the attribute you want to serialize into JSON and send it to Ember
+
+	rails g serializer Member
 
 
 
