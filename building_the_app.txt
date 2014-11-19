@@ -47,6 +47,21 @@ Building The APP
 
 	rails g serializer Member
 
+	Don't forget to add in the attributes
+
+8. The Rails API Controller
+	
+	Add routes to /routes.rb
+
+	namespace :api do
+		namespace :v1 do
+			resources :members
+
+
+
+
+
+
 
 
 
