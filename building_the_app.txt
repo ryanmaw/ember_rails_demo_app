@@ -57,7 +57,13 @@ Building The APP
 		namespace :v1 do
 			resources :members
 
+9. Create Controller 
 
+	Respect the higherarchy 
+
+	rails g controller Api::V1::Members
+
+	Fill in the actions
 
 
 
