@@ -201,25 +201,25 @@
    background: #f8e5ce;
  }
 
- article#lead {
+ article#member {
    margin: 30px;
    width: 60%;
    float: left;
  }
 
- article#lead a.edit {
+ article#member a.edit {
    font-size: 15px;
    font-weight: normal;
    margin-left: 15px;
  }
 
- article#lead .unsaved, article#lead .saving {
+ article#member .unsaved, article#member .saving {
    color: #b20000;
    display: inline-block;
    padding: 0 0 0 20px;
  }
 
- article#lead .saving {
+ article#member .saving {
    color: #00d936;
  }
 

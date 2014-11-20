@@ -7,4 +7,4 @@ App.Router.reopen
 
 App.Router.map ->
 	@resource 'members', path: '/', ->
-		@resource 'member', path: '/members/:id'
+		@resource 'member', path: '/members/:id/:firstName'

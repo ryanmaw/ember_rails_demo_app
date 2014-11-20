@@ -1,0 +1,13 @@
+Editing A Member
+
+We have 2 edit points for each member.
+
+	Status & Notes ---- Basic information
+
+1. Add the Status Selector Values
+
+	Class Knowledge vs Instance Knowledge?
+
+	Class: Each will have a selector
+
+	 

@@ -10,10 +10,13 @@ App.Member = DS.Model.extend
 	lastName:  DS.attr 'string'
 	email:     DS.attr 'string'
 	phone:     DS.attr 'string'
-	status:    DS.attr 'string', defaultValue: 'new'
+	status:    DS.attr 'string', defaultValue: 'New'
 	notes:     DS.attr 'string'
 
 	# Property for displaying full names of members
 	fullName: ( ->
 		@get('firstName') + ' ' + @get('lastName')
 		).property('firstName', 'lastName')
+
+App.Member.reopenClass
+	STATUSES: ['New', 'Closed', 'Good', 'Bad']

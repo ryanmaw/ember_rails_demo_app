@@ -1,4 +1,4 @@
-article#lead
+article#member
 	h1= model.fullName
 
 	p
@@ -8,3 +8,20 @@ article#lead
 	p
 		' Phone:
 		model.phone
+
+	p
+		label Status:
+		'
+		view "select" content=App.Member.STATUSES value=model.status viewName="status"
+
+	p
+		label Notes:
+		br
+		textarea value=model.notes
+
+	p 
+		input type='submit' value='Save Changes' click='saveChanges'
+		if showUnsavedMessage
+			.unsaved unsaved Changes
+		if isSaving 
+			.saving saving...
