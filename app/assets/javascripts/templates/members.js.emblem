@@ -5,4 +5,4 @@ article#members
 			link-to 'member' member tagName="li"
 				member.fullName
 
-outlet
+= outlet

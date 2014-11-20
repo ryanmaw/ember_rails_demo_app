@@ -10,4 +10,16 @@ We have 2 edit points for each member.
 
 	Class: Each will have a selector
 
+2. Add another Edit Route
+
+3. Create the Template
+
+4. Implement Template Actions in A Controllers
+
+5. Add isEditing property on the member controller
+	
+	We need to hide unnecessary UI
+
+	
+
 	 

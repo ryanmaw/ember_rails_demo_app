@@ -1,27 +1,32 @@
-article#member
-	h1= model.fullName
+outlet
 
-	p
-		' Email:
-		model.email
+unless isEditing
+	article#member
+		h1
+			fullName
+			// First arg is text of link, second is the route
+			link-to 'edit' 'member.edit' model classNames='edit'
+		p
+			' Email:
+			model.email
 
-	p
-		' Phone:
-		model.phone
+		p
+			' Phone:
+			model.phone
 
-	p
-		label Status:
-		'
-		view "select" content=App.Member.STATUSES value=model.status viewName="status"
+		p
+			label Status:
+			'
+			view Ember.Select content=App.Member.STATUSES value=model.status viewName="status"
 
-	p
-		label Notes:
-		br
-		textarea value=model.notes
+		p
+			label Notes:
+			br
+			view Ember.TextArea value=model.notes viewName="notes"
 
-	p 
-		input type='submit' value='Save Changes' click='saveChanges'
-		if showUnsavedMessage
-			.unsaved unsaved Changes
-		if isSaving 
-			.saving saving...
+		p 
+			input type='submit' value='Save Changes' click='saveChanges'
+			if showUnsavedMessage
+				.unsaved unsaved Changes
+			if isSaving 
+				.saving saving...
