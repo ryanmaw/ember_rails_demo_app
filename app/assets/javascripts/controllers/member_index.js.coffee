@@ -1,4 +1,4 @@
-App.MemberController = Ember.ObjectController.extend
+App.MemberIndexController = Ember.ObjectController.extend
 
 
 
