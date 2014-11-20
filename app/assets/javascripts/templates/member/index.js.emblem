@@ -1,0 +1,30 @@
+
+article#member
+	h1
+		fullName
+		// First arg is text of link, second is the route
+		link-to 'edit' 'member.edit' model classNames='edit'
+	p
+		' Email:
+		model.email
+
+	p
+		' Phone:
+		model.phone
+
+	p
+		label for=view.status.elementId Status:
+		'
+		view "select" content=App.Member.STATUSES value=model.status viewName="status" 
+
+	p
+		label Notes:
+		br
+		= textarea value=model.notes viewName="notes"
+
+	p 
+		input type='submit' value='Save Changes' click='saveChanges'
+		if showUnsavedMessage
+			.unsaved unsaved Changes
+		if isSaving 
+			.saving saving...
