@@ -4,7 +4,7 @@ namespace :db do
 		Member.destroy_all
 
 		def random_status
-			['new', 'in progress', 'closed', 'bad'].sample
+			['New', 'Closed', 'Good', 'Bad'].sample
 		end
 
 		20.times do 

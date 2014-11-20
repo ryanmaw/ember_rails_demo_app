@@ -15,14 +15,14 @@ unless isEditing
 			model.phone
 
 		p
-			label Status:
+			label for=view.status.elementId Status:
 			'
-			view Ember.Select content=App.Member.STATUSES value=model.status viewName="status"
+			view "select" content=App.Member.STATUSES value=model.status viewName="status" 
 
 		p
 			label Notes:
 			br
-			view Ember.TextArea value=model.notes viewName="notes"
+			= textarea value=model.notes viewName="notes"
 
 		p 
 			input type='submit' value='Save Changes' click='saveChanges'

@@ -18,5 +18,12 @@ App.Member = DS.Model.extend
 		@get('firstName') + ' ' + @get('lastName')
 		).property('firstName', 'lastName')
 
+
+
+
 App.Member.reopenClass
+	# selectedName: status
 	STATUSES: ['New', 'Closed', 'Good', 'Bad']
+
+# selectedName: 'New'
+# STATUSES: ['New', 'Closed', 'Good', 'Bad']
