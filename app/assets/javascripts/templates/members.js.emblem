@@ -1,5 +1,7 @@
 article#members
-	h1 Members
+	h1 
+	| Members
+	link-to 'members.new' | New Member
 	ul
 		each member in controller 
 			link-to 'member' member tagName="li"

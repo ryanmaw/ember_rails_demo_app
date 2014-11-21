@@ -24,6 +24,8 @@ App.Member = DS.Model.extend
 App.Member.reopenClass
 	# selectedName: status
 	STATUSES: ['New', 'Closed', 'Good', 'Bad']
+	valid: (fields) ->
+		fields.firstName and fields.lastName
 
 # selectedName: 'New'
 # STATUSES: ['New', 'Closed', 'Good', 'Bad']
