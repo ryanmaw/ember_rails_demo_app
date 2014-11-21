@@ -1,4 +1,3 @@
-
 article#member
 	h1
 		fullName
@@ -23,6 +22,7 @@ article#member
 		= textarea value=model.notes viewName="notes"
 
 	p 
+		a.delete href='#' click="delete" delete
 		input type='submit' value='Save Changes' click='saveChanges'
 		if showUnsavedMessage
 			.unsaved unsaved Changes

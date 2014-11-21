@@ -5,4 +5,5 @@ article#members
 			link-to 'member' member tagName="li"
 				member.fullName
 
-= outlet
+// This outlet is used by member_index and member_edit
+outlet

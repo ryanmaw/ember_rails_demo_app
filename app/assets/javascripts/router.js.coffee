@@ -7,6 +7,9 @@ App.Router.reopen
 
 App.Router.map ->
 	@resource 'members', path: '/', ->
-		@resource 'member', path: '/members/:id', ->
+		@resource 'member', path: 'member/:id', ->
+			
 			# This route looks for the MemberEdit controller, view, and template
+			# @route 'index' implicitly provided
+
 			@route 'edit'
